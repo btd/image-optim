@@ -1,4 +1,6 @@
-# image-optim
+# img-optim
+
+For now it process only `.png` files with advpng, pngquant, pngcrush, optipng, pngout. Will be added jpg utils
 
 Optimize (lossless compress) images (jpeg, png, gif, svg) using external utilities:
 
@@ -18,36 +20,13 @@ Based on [ImageOptim.app](http://imageoptim.com/) and `image_optim` ruby gem.
 
 ## Installation
 
+1. Install from npm.
+
 ```sh
-npm install --save image-optim
+npm install --save img-optim
 ```
 
-
-## Binaries location
-
-Simplest way for `image_optim` to locate binaries is to install them in common location present in `PATH` (see [Binaries installation](#binaries-installation)).
-
-If you cannot install to common location, then install to custom one and add it to `PATH`.
-
-Specify custom bin location using `XXX_BIN` environment variable (`JPEGOPTIM_BIN`, `OPTIPNG_BIN`, …).
-
-Besides permanently setting environment variables in `~/.profile`, `~/.bash_profile`, `~/.bashrc`, `~/.zshrc`, … they can be set:
-
-* before command:
-
-  `PATH="/custom/location:$PATH" image_optim *.jpg`
-
-  for example:
-
-  `PATH="/Applications/ImageOptim.app/Contents/MacOS:$PATH" image_optim *.jpg`
-
-* inside script:
-
-  `ENV['PATH'] = "/custom/location:#{ENV['PATH']}"; ImageOptim.optimize_images([…])`
-
-  for example:
-
-  `ENV['PATH'] = "/Applications/ImageOptim.app/Contents/MacOS:#{ENV['PATH']}"; ImageOptim.optimize_images([…])`
+2. [Install binaries](#binaries_installation)
 
 ## Binaries installation
 
@@ -60,6 +39,8 @@ brew install advancecomp pngcrush optipng pngquant
 ```
 
 ### pngout installation (optional)
+
+Pngout very good for final png compression as it implements own deflate algorithm, but it is very-very slow, and sometimes does not gain any advantage (as advpng implemented zopfli - so probably you will not get any advantage). I recommend use it only if you know that you need it.
 
 You can install `pngout` by downloading and installing the [binary versions](http://www.jonof.id.au/kenutils).
 
