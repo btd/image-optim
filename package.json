@@ -1,0 +1,29 @@
+{
+  "name": "image-optim",
+  "version": "0.0.1",
+  "description": "Set of utilities to run command line tools for image optimization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "image",
+    "gif",
+    "jpg",
+    "jpeg",
+    "svg",
+    "png",
+    "optimization"
+  ],
+  "author": "Denis Bardadym <bardadymchik@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^0.2.10",
+    "lodash.merge": "^2.4.1",
+    "lodash.groupby": "^2.4.1",
+    "tmp": "0.0.23",
+    "cp": "^0.1.1",
+    "mv": "^2.0.0",
+    "debug": "^0.7.4"
+  }
+}
