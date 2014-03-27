@@ -1,6 +1,6 @@
 {
     "name": "img-optim",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Set of utilities to run command line tools for image optimization",
     "main": "lib/runner.js",
     "keywords": [
