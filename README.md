@@ -9,7 +9,7 @@ Optimize (lossless compress) images (jpeg, png, gif, svg) using external utiliti
 * [gifsicle](http://www.lcdf.org/gifsicle/)
 * [jhead](http://www.sentex.net/~mwandel/jhead/)
 * [jpegoptim](http://www.kokkonen.net/tjko/projects.html)
-* jpegtran from [Independent JPEG Group's JPEG library](http://www.ijg.org/) or [jpeg-turbo](http://www.libjpeg-turbo.org/)
+* jpegtran from [Independent JPEG Group's JPEG library](http://www.ijg.org/) or [jpeg-turbo](http://www.libjpeg-turbo.org/). In future will be added mozjpeg.
 * [optipng](http://optipng.sourceforge.net/)
 * [pngcrush](http://pmt.sourceforge.net/pngcrush/)
 * [pngout](http://www.advsys.net/ken/util/pngout.htm)
@@ -36,8 +36,9 @@ npm install --save img-optim
 Tested on 10.9.
 
 ```bash
-brew install advancecomp pngcrush optipng pngquant pngnq
+brew install advancecomp pngcrush optipng pngquant pngnq libjpeg-turbo jhead jpegoptim
 ```
+Note about libjpeg-turbo. It is fork of libjpeg and it can be drop-in replacement for libjpeg (almost in all features), but in brew it is installed keg-only and you will need to specify full path to binary `jpegtran`.
 
 ### pngout installation (optional)
 
