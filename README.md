@@ -13,6 +13,7 @@ Optimize (lossless compress) images (jpeg, png, gif, svg) using external utiliti
 * [pngout](http://www.advsys.net/ken/util/pngout.htm)
 * [svgo](https://github.com/svg/svgo)
 * [pngquant](http://pngquant.org/)
+* [pngnq](https://github.com/stuart/pngnq)
 
 Based on [ImageOptim.app](http://imageoptim.com/) and `image_optim` ruby gem.
 
@@ -56,7 +57,7 @@ Besides permanently setting environment variables in `~/.profile`, `~/.bash_prof
 Tested on 10.9.
 
 ```bash
-brew install advancecomp pngcrush optipng pngquant
+brew install advancecomp pngcrush optipng pngquant pngnq
 ```
 
 ### pngout installation (optional)
