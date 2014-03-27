@@ -1,32 +1,40 @@
 {
-  "name": "img-optim",
-  "version": "0.0.1",
-  "description": "Set of utilities to run command line tools for image optimization",
-  "main": "lib/runner.js",
-  "keywords": [
-    "image",
-    "gif",
-    "jpg",
-    "jpeg",
-    "svg",
-    "png",
-    "optimization",
-    "advpng",
-    "optipng",
-    "pngcrush",
-    "pngout",
-    "pngquant"
-  ],
-  "repository": "https://github.com/btd/image-optim.git",
-  "author": "Denis Bardadym <bardadymchik@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "async": "^0.2.10",
-    "lodash.merge": "^2.4.1",
-    "lodash.groupby": "^2.4.1",
-    "tmp": "0.0.23",
-    "cp": "^0.1.1",
-    "mv": "^2.0.0",
-    "debug": "^0.7.4"
-  }
+    "name": "img-optim",
+    "version": "0.0.1",
+    "description": "Set of utilities to run command line tools for image optimization",
+    "main": "lib/runner.js",
+    "keywords": [
+        "image",
+        "gif",
+        "jpg",
+        "jpeg",
+        "svg",
+        "png",
+        "optimization",
+        "advpng",
+        "optipng",
+        "pngcrush",
+        "pngout",
+        "pngquant",
+        "pngnq",
+        "jpegtran",
+        "jpegoptim",
+        "gifsicle",
+        "svgo"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/btd/image-optim.git"
+    },
+    "author": "Denis Bardadym <bardadymchik@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "async": "^0.2.10",
+        "lodash.merge": "^2.4.1",
+        "lodash.groupby": "^2.4.1",
+        "tmp": "0.0.23",
+        "cp": "^0.1.1",
+        "mv": "^2.0.0",
+        "debug": "^0.7.4"
+    }
 }
