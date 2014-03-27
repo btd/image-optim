@@ -7,7 +7,7 @@ Optimize (lossless compress) images (jpeg, png, gif, svg) using external utiliti
 * [gifsicle](http://www.lcdf.org/gifsicle/)
 * [jhead](http://www.sentex.net/~mwandel/jhead/)
 * [jpegoptim](http://www.kokkonen.net/tjko/projects.html)
-* jpegtran from [Independent JPEG Group's JPEG library](http://www.ijg.org/)
+* jpegtran from [Independent JPEG Group's JPEG library](http://www.ijg.org/) or [jpeg-turbo](http://www.libjpeg-turbo.org/)
 * [optipng](http://optipng.sourceforge.net/)
 * [pngcrush](http://pmt.sourceforge.net/pngcrush/)
 * [pngout](http://www.advsys.net/ken/util/pngout.htm)
