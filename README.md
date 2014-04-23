@@ -18,17 +18,23 @@ Based on [ImageOptim.app](http://imageoptim.com/) and `image_optim` ruby gem.
 
 I am expecting you know basics of image optimization, so for each situation you just choose best runner config yourself for your needs.
 
+Also i do not want to polute source system, like with `make install` (see node-gifsicle for fail case). Also i want to choose binaries i want (version).
+
 ## Installation
 
 1. Install from npm.
 
-```sh
-npm install --save img-optim
-```
+    ```sh
+    npm install --save img-optim
+    ```
 
 2. [Install binaries](#binaries_installation)
 
 ## Binaries installation
+
+### Ubuntu
+
+Pls see [wiki](https://github.com/btd/image-optim/wiki/Binaries-installation)
 
 ### OS X: Brew
 
